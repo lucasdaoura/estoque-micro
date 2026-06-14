@@ -22,7 +22,7 @@ jobs:
           cache: maven
 
       - name: Rodar testes
-        run: ./mvnw test
+        run: mvn test
 
       - name: Build do projeto
-        run: ./mvnw package -DskipTests
+        run: mvn package -DskipTests
