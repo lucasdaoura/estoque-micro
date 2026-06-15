@@ -12,8 +12,8 @@ public class CotacaoService {
 
     private final RestTemplate restTemplate;
 
-    public CotacaoService() {
-        this.restTemplate = new RestTemplate();
+    public CotacaoService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
     }
 
     @SuppressWarnings("unchecked")
